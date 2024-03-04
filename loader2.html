@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader2</title>
+
+
+    <style>
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: white;
+          border:5px solid red;
+          border-radius: 50%;
+          animation-fill-mode: both;
+          
+         
+          animation: example 1s ease-in-out 1s infinite normal;
+          transition:  1s ease all;
+        }
+
+        .loader p{
+            text-align: center;
+            padding-top: 25px;
+            
+            
+        }
+        
+        @keyframes example {
+          0%   {border-top-color:rgba(231, 76, 60 , 1) ;
+            border-right-color:#8bb92900 ;
+            border-bottom-color:rgba(41, 128, 185, 0) ;
+            border-left-color:rgba(41, 128, 185, 0) ;
+            transition:  .2s ease all;          
+          }
+          25%  {border-top-color:rgba(41, 128, 185, 0) ;
+            border-right-color:rgb(4, 249, 114, 1) ;
+            border-bottom-color:rgba(41, 128, 185, 0) ;
+            border-left-color:rgba(41, 128, 185, 0) ;
+            transition:  .2s ease all;
+          
+          }
+          50%  {border-top-color:rgba(41, 128, 185, 0) ;
+            border-right-color:rgba(41, 128, 185, 0) ;
+            border-bottom-color:rgb(220, 231, 60, 1) ;
+            border-left-color:rgba(41, 128, 185, 0) ;
+            transition:  .2s ease all;
+               
+          
+          }
+          100% {border-top-color:rgba(41, 128, 185, 0) ;
+            border-right-color:rgba(41, 128, 185, 0) ;
+            border-bottom-color:rgba(41, 128, 185, 0) ;
+            border-left-color:rgb(146, 60, 231, 1) ;
+            transition:  .2s ease all;
+               
+          
+          }
+        }
+        
+        /* @keyframes example {
+          0%   {border-color: red;}
+          25%  {border-color: pink;}
+          50%  {border-color: blue;}
+          100% {border-color: green;}
+        } */
+        </style>
+
+</head>
+<body>
+
+        
+</section>
+<section class="container parent-container loader">
+<h1>CSS Animation</h1>
+<div><p>Loading...</p></div>
+</section>
+
+    
+</body>
+</html>
